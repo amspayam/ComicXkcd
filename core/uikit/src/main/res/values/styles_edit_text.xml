@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.AppComponents.EditText.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_m</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_m</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_m</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_m</item>
+
+        <item name="hintTextAppearance">@style/Widget.AppComponents.EditText.HintTextAppearance
+        </item>
+        <item name="errorTextAppearance">@style/Widget.AppComponents.EditText.ErrorTextAppearance
+        </item>
+        <item name="counterTextAppearance">@style/Widget.AppComponents.EditText.HintTextAppearance
+        </item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">@color/grey</item>
+    </style>
+
+    <style name="Widget.AppComponents.EditText.ErrorTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/caption</item>
+    </style>
+
+    <style name="Widget.AppComponents.EditText.HintTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/caption</item>
+    </style>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- H1 -->
+    <style name="TextAppearance.Components.H1" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/h1</item>
+    </style>
+
+    <!-- H2 -->
+    <style name="TextAppearance.Components.H2" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/h2</item>
+    </style>
+
+    <!-- H3 -->
+    <style name="TextAppearance.Components.H3" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/h3</item>
+    </style>
+
+    <!-- H4 -->
+    <style name="TextAppearance.Components.H4" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/h4</item>
+    </style>
+
+    <!-- H5 -->
+    <style name="TextAppearance.Components.H5" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/h5</item>
+    </style>
+
+    <!-- H6 -->
+    <style name="TextAppearance.Components.H6" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/h6</item>
+    </style>
+
+    <!-- Label -->
+    <style name="TextAppearance.Components.Label" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/label</item>
+    </style>
+
+    <!-- Body -->
+    <style name="TextAppearance.Components.Body" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/body</item>
+    </style>
+
+    <!-- Caption -->
+    <style name="TextAppearance.Components.Caption" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/caption</item>
+    </style>
+
+    <!-- Footnote -->
+    <style name="TextAppearance.Components.Footnote" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/footnote</item>
+    </style>
+
+
+</resources>

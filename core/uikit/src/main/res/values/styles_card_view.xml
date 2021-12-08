@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ZeroRadius Style-->
+    <style name="Widget.AppComponents.CardView.ZeroRadius" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">@dimen/radius_zero</item>
+    </style>
+
+    <!--SmallRadius Style-->
+    <style name="Widget.AppComponents.CardView.SmallRadius" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">@dimen/radius_s</item>
+    </style>
+
+    <!--MediumRadius Style-->
+    <style name="Widget.AppComponents.CardView.MediumRadius" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">@dimen/radius_m</item>
+    </style>
+
+    <!--LargeRadius Style-->
+    <style name="Widget.AppComponents.CardView.LargeRadius" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">@dimen/radius_l</item>
+    </style>
+</resources>

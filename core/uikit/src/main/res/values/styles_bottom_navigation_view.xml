@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.BottomNavigationView.InactiveButton" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView.ActiveButton" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

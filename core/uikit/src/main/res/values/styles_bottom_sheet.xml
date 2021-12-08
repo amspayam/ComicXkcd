@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomSheetComponent" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="bottomSheetStyle">@style/BottomSheetBackground</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetBackground" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_rect_white_24dp</item>
+        <item name="behavior_peekHeight">1000dp</item>
+    </style>
+
+</resources>

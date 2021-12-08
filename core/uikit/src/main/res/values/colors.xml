@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#E6373E</color>
+    <color name="colorPrimaryDark">#C23435</color>
+    <color name="colorAccent">#FFF</color>
+    <!-- ======================================================================================= -->
+    <!-- Basic -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#F16363</color>
+    <color name="green">#3ECD66</color>
+    <color name="blue">#006DCF</color>
+    <color name="orange">#FEBE10</color>
+    <color name="grey">#E5E5E5</color>
+    <!-- ======================================================================================= -->
+    <!-- Background And Line-->
+    <color name="windowsBackground">#FFFFFF</color>
+    <color name="divider">#DEDEDE</color>
+    <!-- ======================================================================================= -->
+    <!-- Text -->
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#5F5F5F</color>
+    <color name="textThirdly">#767676</color>
+    <color name="textHint">#5F5F5F</color>
+    <color name="textDarkBlue">#00284C</color>
+    <color name="textWhite">#FFFFFF</color>
+    <color name="textGreen">#3ECD66</color>
+    <color name="textRed">#F16363</color>
+    <!-- ======================================================================================= -->
+    <!-- State -->
+    <color name="disable">#B5B5B5</color>
+    <color name="error">#F16363</color>
+    <!-- ======================================================================================= -->
+    <!-- alpha -->
+    <color name="black_alpha_40">#65000000</color>
+    <!-- ======================================================================================= -->
+
+</resources>

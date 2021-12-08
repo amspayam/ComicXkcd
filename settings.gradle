@@ -1,0 +1,13 @@
+rootProject.name = "ComicsXkcd"
+
+/* Application */
+include 'app'
+include ':apptest'
+
+/* Core */
+include ':core:test'
+include ':core:base'
+include ':core:uikit'
+include ':core:repository'
+include ':core:cachemanager'
+include ':core:navigation'
