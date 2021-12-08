@@ -5,7 +5,6 @@ plugins {
 dependencies {
 
     koinDG()
-    rxDG()
     coroutinesDG()
     retrofitAndGsonDG()
     navigationDG()

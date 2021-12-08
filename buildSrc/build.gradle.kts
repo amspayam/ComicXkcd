@@ -32,7 +32,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
         classpath("com.github.ben-manes:gradle-versions-plugin:0.21.0")
     }
 }
@@ -45,7 +45,7 @@ repositories {
 
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
-    languageVersion = "1.6.0"
+    languageVersion = "1.5.21"
 }
 
 dependencies {
@@ -53,8 +53,8 @@ dependencies {
     compileOnly(gradleApi())
 
     implementation("com.android.tools.build:gradle:4.2.2")
-    implementation(kotlin("gradle-plugin", "1.6.0"))
-    implementation(kotlin("gradle-plugin-api", "1.6.0"))
+    implementation(kotlin("gradle-plugin", "1.5.21"))
+    implementation(kotlin("gradle-plugin-api", "1.5.21"))
     implementation(kotlin("android-extensions"))
 
 }

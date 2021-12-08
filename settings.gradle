@@ -14,3 +14,4 @@ include ':core:navigation'
 
 /* Feature */
 include ':features:main'
+include ':features:explorer'

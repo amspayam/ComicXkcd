@@ -6,6 +6,4 @@ dependencies {
     androidXViewDG()
     navigationDG()
     coroutinesDG()
-    implementation(Libraries.glide)
-    implementation(Libraries.skeleton)
 }

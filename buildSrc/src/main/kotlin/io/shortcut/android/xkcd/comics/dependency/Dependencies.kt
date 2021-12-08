@@ -3,7 +3,7 @@ object Versions {
     // <editor-fold desc="Tools">
     const val androidGradle = "4.2.2"
     const val googleServicesGradle = "4.3.8"
-    const val kotlin = "1.6.0"
+    const val kotlin = "1.5.21"
     const val gradleVersions = "0.21.0"
     const val tools_navigationSafeArgsGradle = "2.3.5"
     const val firebasePerformance = "1.3.1"
@@ -63,8 +63,8 @@ object Versions {
     // </editor-fold>
 
     //<editor-fold desc="Coroutines">
-    const val coroutines_core = "1.3.9"
-    const val coroutines_android = "1.3.9"
+    const val coroutines_core = "1.3.8"
+    const val coroutines_android = "1.3.8"
     // </editor-fold>
 
     // <editor-fold desc="Retrofit and Gson">
@@ -109,10 +109,6 @@ object Versions {
     // Coroutines
     const val testCoroutines = "1.4.2"
 
-    //</editor-fold>
-
-    // <editor-fold desc="Skeleton">
-    const val skeleton = "v1.1.6"
     //</editor-fold>
 
     // <editor-fold desc="Room">
@@ -235,11 +231,6 @@ object Libraries {
     const val glideCompiler = "com.github.bumptech.glide:compiler:${Versions.glideCompiler}"
     // </editor-fold>
 
-    // <editor-fold desc="Rx">
-    const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxjava}"
-    const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxandroid}"
-    // </editor-fold>
-
     // <editor-fold desc="Logger">
     const val logger = "com.orhanobut:logger:${Versions.logger}"
     // </editor-fold>
@@ -265,12 +256,7 @@ object Libraries {
 
     // Coroutines
     const val testCoroutines =
-        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.testCoroutines}"
-    // </editor-fold>
-
-    // <editor-fold desc="Skeleton">
-    const val skeleton =
-        "com.github.rasoulmiri:Skeleton:${Versions.skeleton}"
+        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines_android}"
     // </editor-fold>
 
     // <editor-fold desc="Room">

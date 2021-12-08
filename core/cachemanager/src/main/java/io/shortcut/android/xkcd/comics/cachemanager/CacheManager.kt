@@ -8,11 +8,6 @@ import kotlin.jvm.internal.ClassReference
 
 class CacheManager(private val context: Context) {
 
-    companion object {
-        const val DEVICE_ID = "deviceId"
-        const val DEVICE_SIGN_STATE = "isSigned"
-    }
-
     private val preferences: String? = null
 
     @Volatile

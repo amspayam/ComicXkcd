@@ -14,12 +14,7 @@ dependencies {
 
     // Features
     implementation(project(":features:main"))
-//    implementation(project(":features:shared"))
-//    implementation(project(":features:explorer"))
-//    implementation(project(":features:random"))
-//    implementation(project(":features:comicdetail"))
-//    implementation(project(":features:favorite"))
-//    implementation(project(":features:search"))
+    implementation(project(":features:explorer"))
 
     // Kotlin stdlib
     implementation(Libraries.kotlin_stdlib)
@@ -31,7 +26,6 @@ dependencies {
     implementation(Libraries.androidx_core_ktx)
 
     koinDG()
-    rxDG()
     coroutinesDG()
     retrofitAndGsonDG()
     navigationDG()

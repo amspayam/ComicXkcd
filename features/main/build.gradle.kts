@@ -10,14 +10,7 @@ dependencies {
     implementation(project(":core:repository"))
     implementation(project(":core:navigation"))
 
-    koinDG()
-    rxDG()
-    coroutinesDG()
-    retrofitAndGsonDG()
-    navigationDG()
-    chuckDG()
-    navigationDG()
-    androidXViewDG()
+    baseModuleDG()
 
     // Logger
     implementation(Libraries.logger)

@@ -8,7 +8,6 @@ dependencies {
     implementation(project(":core:base"))
 
     koinDG()
-    rxDG()
     coroutinesDG()
     retrofitAndGsonDG()
     chuckDG()

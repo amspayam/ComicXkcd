@@ -25,7 +25,6 @@ dependencies {
     implementation(Libraries.androidx_core_ktx)
 
     koinDG()
-    rxDG()
     coroutinesDG()
     retrofitAndGsonDG()
     navigationDG()

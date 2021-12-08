@@ -28,13 +28,6 @@ fun DependencyHandlerScope.retrofitAndGsonDG() {
     )
 }
 
-fun DependencyHandlerScope.rxDG() {
-    group(
-        Libraries.rxJava,
-        Libraries.rxAndroid
-    )
-}
-
 fun DependencyHandlerScope.coroutinesDG() {
     group(
         Libraries.coroutines_core,
@@ -108,7 +101,6 @@ fun DependencyHandlerScope.baseModuleDG() {
     Libraries.androidx_core_ktx
     /*Core*/
     koinDG()
-    rxDG()
     coroutinesDG()
     retrofitAndGsonDG()
     navigationDG()

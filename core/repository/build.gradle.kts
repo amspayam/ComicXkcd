@@ -10,7 +10,6 @@ dependencies {
 
 
     koinDG()
-    rxDG()
     coroutinesDG()
     retrofitAndGsonDG()
     chuckDG()
