@@ -13,7 +13,7 @@ dependencies {
 
 
     // Features
-//    implementation(project(":features:main"))
+    implementation(project(":features:main"))
 //    implementation(project(":features:shared"))
 //    implementation(project(":features:explorer"))
 //    implementation(project(":features:random"))

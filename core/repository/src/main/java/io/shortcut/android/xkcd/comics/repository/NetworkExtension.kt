@@ -7,6 +7,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.HttpException
 import retrofit2.Response
+import kotlin.coroutines.resume
 
 sealed class ResultModel<out V> {
     data class Success<V>(val value: V) : ResultModel<V>()

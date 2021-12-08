@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/explorerFragment"
+        android:checked="true"
+        android:icon="@drawable/ic_explorer_24dp"
+        android:title="@string/explorer" />
+    <item
+        android:id="@+id/randomFragment"
+        android:icon="@drawable/ic_random_24dp"
+        android:title="@string/random" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search_24dp"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/ic_favorite_24dp"
+        android:title="@string/my_favorite" />
+</menu>

@@ -2,7 +2,7 @@ package io.shortcut.android.xkcd.comics.apptest.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import io.shortcut.comics.apptest.databinding.ActivityMainTestBinding
+import io.shortcut.android.xkcd.comics.apptest.databinding.ActivityMainTestBinding
 
 class MainActivityTest : AppCompatActivity() {
 

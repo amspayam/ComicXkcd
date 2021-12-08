@@ -11,3 +11,6 @@ include ':core:uikit'
 include ':core:repository'
 include ':core:cachemanager'
 include ':core:navigation'
+
+/* Feature */
+include ':features:main'
