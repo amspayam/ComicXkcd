@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import io.shortcut.android.xkcd.comics.base.view.ViewState
 import io.shortcut.android.xkcd.comics.explorer.domain.model.ComicModel
 import io.shortcut.android.xkcd.comics.explorer.domain.usecase.LastComicUseCase
+import io.shortcut.android.xkcd.comics.repository.executeUseCase
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.BaseViewModel
 
 class ExplorerViewModel(
@@ -25,18 +26,18 @@ class ExplorerViewModel(
 
         // Update view for Loading view
         comicStateViewLiveData.value = ViewState.ViewLoading
-//        track {
-//            lastComicUseCase.executeAsync(kotlin.Unit).executeUseCase({
-//
-//                // Update view for success data
-//                comicStateViewLiveData.postValue(ViewState.ViewData(it))
-//
-//
-//            }, {
-//                // Update view for show Error
-//                comicStateViewLiveData.postValue(ViewState.ViewError(it.message))
-//            })
-//        }
+        track {
+            lastComicUseCase.executeAsync(Unit).executeUseCase({
+
+                // Update view for success data
+                comicStateViewLiveData.postValue(ViewState.ViewData(it))
+
+
+            }, {
+                // Update view for show Error
+                comicStateViewLiveData.postValue(ViewState.ViewError(it.message))
+            })
+        }
 
     }
 

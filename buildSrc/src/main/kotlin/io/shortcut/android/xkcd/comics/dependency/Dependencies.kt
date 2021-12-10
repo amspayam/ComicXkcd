@@ -63,8 +63,8 @@ object Versions {
     // </editor-fold>
 
     //<editor-fold desc="Coroutines">
-    const val coroutines_core = "1.3.8"
-    const val coroutines_android = "1.3.8"
+    const val coroutines_core = "1.5.2-native-mt"
+    const val coroutines_android = "1.5.2-native-mt"
     // </editor-fold>
 
     // <editor-fold desc="Retrofit and Gson">
