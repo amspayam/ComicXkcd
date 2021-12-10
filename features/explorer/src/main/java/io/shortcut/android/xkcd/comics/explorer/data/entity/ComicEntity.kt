@@ -16,12 +16,11 @@ data class ComicEntity(
     @SerializedName("safe_title")
     val safeTitle: String?,
     val transcript: String?,
+    val alt: String?,
 
     // Image
     @SerializedName("img")
     val imageLink: String?,
-    @SerializedName("alt")
-    val imageAlt: String?,
 
     // Date
     val year: Int?,
@@ -32,9 +31,8 @@ data class ComicEntity(
     fun toModel() = ComicModel(
         number = this.number ?: 0,
         title = this.safeTitle ?: "",
-        transcript = this.transcript ?: "",
+        description = this.alt ?: "",
         imageLink = this.imageLink ?: "",
-        imageAlt = this.imageAlt ?: "",
         date = run {
             val calendar = Calendar.getInstance()
             calendar.set(Calendar.YEAR, this.year ?: 1900)

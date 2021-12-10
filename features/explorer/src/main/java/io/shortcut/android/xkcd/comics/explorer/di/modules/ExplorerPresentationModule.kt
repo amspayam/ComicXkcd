@@ -5,5 +5,5 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val explorerPresentationModule = module {
-    viewModel { ExplorerViewModel(get()) }
+    viewModel { ExplorerViewModel(get(), get()) }
 }
