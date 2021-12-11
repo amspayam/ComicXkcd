@@ -8,12 +8,10 @@ data class ComicModel(
 
     // Text
     val title: String,
-    val transcript: String,
+    val description: String,
 
     // Image
-    val imageLink: String,
-    var imageUri: String? = null, // Address for save image in mobile device
-    val imageAlt: String,
+    val imageLink: String, // Address for save image in mobile device
 
     // Date
     val date: Calendar

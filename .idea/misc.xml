@@ -6,7 +6,25 @@
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.19722222222222222" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19722222222222222" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19722222222222222" />
-        <entry key="features/explorer/src/main/res/layout/fragment_explorer.xml" value="0.240625" />
+        <entry key="core/uikit/src/main/res/drawable/ic_close_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_delete_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_explorer_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_favorite_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_favorite_32dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/ic_favorite_fill_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_first_page_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_first_page_32dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/ic_last_page_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_last_page_32dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/ic_next_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_previous_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_previous_32dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/ic_random_32dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/ic_share_24dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/shape_rect_black_opacity_24dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/shape_rect_divider_8dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/shape_shadow_black_bottom.xml" value="0.16296296296296298" />
+        <entry key="features/explorer/src/main/res/layout/fragment_explorer.xml" value="0.2" />
         <entry key="features/main/src/main/res/layout/activity_main.xml" value="0.15648148148148147" />
         <entry key="features/main/src/main/res/layout/fragment_splash.xml" value="0.15648148148148147" />
         <entry key="features/main/src/main/res/menu/bottom_navigation_menu.xml" value="0.240625" />
