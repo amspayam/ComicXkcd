@@ -3,6 +3,7 @@ package io.shortcut.android.xkcd.comics.application
 import androidx.multidex.MultiDexApplication
 import io.shortcut.android.xkcd.comicdetail.di.DetailInjector
 import io.shortcut.android.xkcd.comics.cachemanager.di.CachemanagerInjector
+import io.shortcut.android.xkcd.comics.favorite.di.FavoriteInjector
 import io.shortcut.android.xkcd.comics.finder.di.ComicsInjector
 import io.shortcut.android.xkcd.comics.main.mainactivity.di.MainActivityInjector
 import io.shortcut.android.xkcd.comics.main.splash.di.SplashInjector
@@ -32,6 +33,7 @@ class ApplicationGlobal : MultiDexApplication() {
                 .modules(MainActivityInjector.provideDependencies())
                 .modules(ComicsInjector.provideDependencies())
                 .modules(DetailInjector.provideDependencies())
+                .modules(FavoriteInjector.provideDependencies())
         }
     }
 

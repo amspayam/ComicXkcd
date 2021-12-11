@@ -31,6 +31,7 @@
         <entry key="features/comicdetail/src/main/res/layout/fragment_detail.xml" value="0.33" />
         <entry key="features/comics/src/main/res/layout/fragment_comic_finder.xml" value="0.240625" />
         <entry key="features/explorer/src/main/res/layout/fragment_explorer.xml" value="0.2" />
+        <entry key="features/favourite/src/main/res/layout/fragment_favorite.xml" value="0.240625" />
         <entry key="features/main/src/main/res/layout/activity_main.xml" value="0.15648148148148147" />
         <entry key="features/main/src/main/res/layout/fragment_splash.xml" value="0.15648148148148147" />
         <entry key="features/main/src/main/res/menu/bottom_navigation_menu.xml" value="0.240625" />

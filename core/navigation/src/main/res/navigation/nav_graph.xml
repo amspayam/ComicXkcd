@@ -43,4 +43,10 @@
             app:argType="string" />
     </fragment>
 
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="io.shortcut.android.xkcd.comics.favorite.presenter.FavoriteFragment"
+        android:label="@string/favorite_fragment_label"
+        tools:layout="@layout/fragment_favorite" />
+
 </navigation>

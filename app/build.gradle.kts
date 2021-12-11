@@ -16,6 +16,7 @@ dependencies {
     implementation(project(":features:main"))
     implementation(project(":features:comics"))
     implementation(project(":features:comicdetail"))
+    implementation(project(":features:favorite"))
 
     // Kotlin stdlib
     implementation(Libraries.kotlin_stdlib)
