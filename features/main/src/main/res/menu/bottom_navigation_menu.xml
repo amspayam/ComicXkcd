@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/explorerFragment"
+        android:id="@+id/finderFragment"
         android:checked="true"
         android:icon="@drawable/ic_explorer_32dp"
         android:title="@string/explorer" />

@@ -32,7 +32,7 @@ class MainActivity : BaseActivity<BaseViewModel>() {
     }
 
     override fun onBackPressed() {
-        if (binding.bottomNavigationView.selectedItemId == R.id.explorerFragment) {
+        if (binding.bottomNavigationView.selectedItemId == R.id.finderFragment) {
             finish()
         }
         super.onBackPressed()

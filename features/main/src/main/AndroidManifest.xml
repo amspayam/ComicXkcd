@@ -3,9 +3,7 @@
     package="io.shortcut.android.xkcd.comics.main">
 
     <application android:allowBackup="false">
-        <activity
-            android:name=".mainactivity.MainActivity"
-            android:exported="true">
+        <activity android:name=".mainactivity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

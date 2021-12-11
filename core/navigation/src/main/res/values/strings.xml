@@ -1,8 +1,8 @@
 <resources>
     <string name="splash_fragment_label">Splash</string>
-    <string name="explorer_fragment_label">Explorer</string>
+    <string name="comic_finder_fragment_label">Comic Finder</string>
     <string name="random_fragment_label">Random</string>
-    <string name="comic_detail_fragment_label">Comic Detail</string>
+    <string name="comic_explanation_fragment_label">Comic Explanation</string>
     <string name="favorite_fragment_label">Favorites</string>
     <string name="search_fragment_label">Search</string>
 </resources>

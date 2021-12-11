@@ -16,11 +16,13 @@ class NetworkManager(
     private val context: Context
 ) {
 
-    fun <T> create(serviceClass: Class<T>): T = getClient().create(serviceClass)
+    fun <T> create(serviceClass: Class<T>): T = getClient(null).create(serviceClass)
+    fun <T> create(baseUrl: String, serviceClass: Class<T>): T =
+        getClient(baseUrl).create(serviceClass)
 
-    private fun getClient(): Retrofit {
+    private fun getClient(baseUrl: String?): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
+            .baseUrl(if (baseUrl.isNullOrEmpty()) BuildConfig.BASE_URL else baseUrl)
             .addConverterFactory(GsonConverterFactory.create(GsonUtils.gson))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .client(OkHttpClient.Builder()

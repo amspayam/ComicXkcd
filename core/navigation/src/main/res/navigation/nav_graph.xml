@@ -10,13 +10,37 @@
         android:label="@string/splash_fragment_label"
         tools:layout="@layout/fragment_splash">
         <action
-            android:id="@+id/action_splashFragment_to_explorerFragment"
-            app:destination="@id/explorerFragment" />
+            android:id="@+id/action_splashFragment_to_finderFragment"
+            app:destination="@id/finderFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/explorerFragment"
-        android:name="io.shortcut.android.xkcd.comics.explorer.presenter.ExplorerFragment"
-        android:label="@string/explorer_fragment_label"
-        tools:layout="@layout/fragment_explorer" />
+        android:id="@+id/finderFragment"
+        android:name="io.shortcut.android.xkcd.comics.finder.presenter.ComicFinderFragment"
+        android:label="@string/comic_finder_fragment_label"
+        tools:layout="@layout/fragment_comic_finder">
+        <action
+            android:id="@+id/action_finderFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="io.shortcut.android.xkcd.comicdetail.presenter.DetailFragment"
+        android:label="@string/comic_explanation_fragment_label"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="comicNumber"
+            app:argType="integer" />
+        <argument
+            android:name="comicTitle"
+            app:argType="string" />
+        <argument
+            android:name="comicImageUrl"
+            app:argType="string" />
+        <argument
+            android:name="comicDescription"
+            app:argType="string" />
+    </fragment>
+
 </navigation>
