@@ -105,7 +105,11 @@ class ExplorerFragment : BaseFragment<ExplorerViewModel>() {
                 .getComicByNumber(comicNumber = viewModel.latestComicNumber + 1)
             R.id.lastComicImageView -> viewModel
                 .getComicByNumber(comicNumber = viewModel.lastComicNumber)
-            R.id.randomComicImageView -> viewModel.getRandomComic()
+            R.id.randomComicImageView -> viewModel.getComicByNumber(
+                comicNumber = viewModel.randomComic(
+                    lastComicNumber = viewModel.lastComicNumber
+                )
+            )
         }
     }
 

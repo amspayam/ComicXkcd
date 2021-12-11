@@ -62,37 +62,6 @@ class ExplorerViewModel(
 
     }
 
-    fun getRandomComic() {
-
-        // Remove all job
-        removeAllJob()
-
-        // Update view for Loading view
-        comicStateViewLiveData.value = ViewState.ViewLoading
-        track {
-            comicByNumberUseCase.executeAsync(randomComic(lastComicNumber))
-                .executeUseCase({
-
-                    // Save the latest comic number to surf
-                    latestComicNumber = it.number
-
-                    // Update view for success data
-                    comicStateViewLiveData.postValue(ViewState.ViewData(it))
-
-                    // Update next button view
-                    nextStateViewLiveData.postValue(it.number < lastComicNumber)
-
-                    // Update previous button view
-                    previousStateViewLiveData.postValue(it.number > 1)
-
-                }, {
-                    // Update view for show Error
-                    comicStateViewLiveData.postValue(ViewState.ViewError(it.message))
-                })
-        }
-
-    }
-
     fun getComicByNumber(comicNumber: Int) {
 
         // Remove all job
@@ -125,7 +94,6 @@ class ExplorerViewModel(
     }
 
     // generated random from 1 to lastComicNumber included
-    @VisibleForTesting
     fun randomComic(lastComicNumber: Int): Int = (1..lastComicNumber).random()
 
 }
