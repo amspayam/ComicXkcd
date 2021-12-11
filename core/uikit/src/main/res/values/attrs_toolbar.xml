@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToolbarComponent">
+        <attr name="android:text" />
+        <attr name="android:background" />
+        <attr name="toolbarType">
+            <flag name="back" value="0" />
+            <flag name="simple" value="1" />
+            <flag name="close" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

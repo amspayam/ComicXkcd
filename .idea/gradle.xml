@@ -22,7 +22,8 @@
             <option value="$PROJECT_DIR$/core/test" />
             <option value="$PROJECT_DIR$/core/uikit" />
             <option value="$PROJECT_DIR$/features" />
-            <option value="$PROJECT_DIR$/features/explorer" />
+            <option value="$PROJECT_DIR$/features/comicdetail" />
+            <option value="$PROJECT_DIR$/features/comics" />
             <option value="$PROJECT_DIR$/features/main" />
           </set>
         </option>

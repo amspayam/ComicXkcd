@@ -14,7 +14,8 @@ dependencies {
 
     // Features
     implementation(project(":features:main"))
-    implementation(project(":features:explorer"))
+    implementation(project(":features:comics"))
+    implementation(project(":features:comicdetail"))
 
     // Kotlin stdlib
     implementation(Libraries.kotlin_stdlib)

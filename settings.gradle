@@ -14,4 +14,5 @@ include ':core:navigation'
 
 /* Feature */
 include ':features:main'
-include ':features:explorer'
+include ':features:comics'
+include ':features:comicdetail'

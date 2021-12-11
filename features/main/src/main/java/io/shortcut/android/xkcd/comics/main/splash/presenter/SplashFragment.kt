@@ -39,7 +39,7 @@ class SplashFragment : BaseFragment<SplashViewModel>() {
     }
 
     private fun navigateToMainFragment() {
-        val action = SplashFragmentDirections.actionSplashFragmentToExplorerFragment()
+        val action = SplashFragmentDirections.actionSplashFragmentToFinderFragment()
         findNavController().navigate(action)
     }
 
