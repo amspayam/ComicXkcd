@@ -41,6 +41,16 @@ class DetailViewModel(
         // Update view for Loading view
         detailStateViewLiveData.value = ViewState.ViewLoading
 
+        // Create initial model to show to user while explanation loading
+        val initialData = ExplanationResponseModel(
+            title = "$comicNumber: $comicTitle",
+            explanation = "Fetching Data...",
+            imageUrl = comicImageUrl,
+            descripton = comicDescription
+        )
+        // Update view for the first time
+        detailStateViewLiveData.postValue(ViewState.ViewData(initialData))
+
         track {
             explanationUseCase.executeAsync(
                 ExplanationRequestModel(

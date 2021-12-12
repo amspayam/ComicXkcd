@@ -106,9 +106,9 @@ fun DependencyHandlerScope.baseModuleDG() {
     navigationDG()
     lifeCycleDG()
     chuckDG()
+    roomDG()
     /*UI Kit*/
     androidXViewDG()
-    navigationDG()
-
+    Libraries.paging
     glideDG()
 }

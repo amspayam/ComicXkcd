@@ -61,7 +61,7 @@ fun Project.setupAndroidBlock(isApplication: Boolean) {
 object Build {
 
     const val minSdk = 23
-    const val compileSdk = 30
+    const val compileSdk = 31
     const val targetSdk = 30
     const val buildTools = "30.0.3"
 

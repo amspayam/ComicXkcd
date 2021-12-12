@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/core/cachemanager" />
             <option value="$PROJECT_DIR$/core/navigation" />
             <option value="$PROJECT_DIR$/core/repository" />
+            <option value="$PROJECT_DIR$/core/room" />
             <option value="$PROJECT_DIR$/core/test" />
             <option value="$PROJECT_DIR$/core/uikit" />
             <option value="$PROJECT_DIR$/features" />

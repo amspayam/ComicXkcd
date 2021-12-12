@@ -96,12 +96,12 @@ object Versions {
     // </editor-fold>
 
     // <editor-fold desc="Test">
-    const val junit = "4.12"
+    const val junit = "4.13.1"
     const val androidxTest = "1.3.0"
     const val testCore = "2.1.0"
 
     // Espresso
-    const val androidxTestEspresso = "3.1.0"
+    const val androidxTestEspresso = "3.3.0"
 
     // Mockk
     const val mockk = "1.10.2"
@@ -116,7 +116,7 @@ object Versions {
     //</editor-fold>
 
     // <editor-fold desc="Paging">
-    const val paging = "1.0.0-alpha4-1"
+    const val paging = "3.1.0"
     //</editor-fold>
 }
 
@@ -265,7 +265,7 @@ object Libraries {
     // </editor-fold>
 
     // <editor-fold desc="Paging">
-    const val paging = "android.arch.paging:runtime:${Versions.paging}"
+    const val paging = "androidx.paging:paging-runtime:${Versions.paging}"
     // </editor-fold>
 
 

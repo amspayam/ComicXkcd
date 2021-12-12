@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Delete dialog-->
+    <string name="delete_question">Are you sure you want to delete %s?</string>
+    <string name="delete_successful">Delete successful</string>
+    <string name="delete_button_label">Delete</string>
+    <string name="cancel_button_label">Cancel</string>
+
+    <string name="not_implemented_yet">Not implemented yet</string>
+</resources>

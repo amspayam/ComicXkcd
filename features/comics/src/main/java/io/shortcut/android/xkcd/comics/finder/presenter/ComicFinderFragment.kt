@@ -77,6 +77,12 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
             binding.firstComicImageView.isEnabled = isEnabled
         }
         // </editor-fold>
+
+        // <editor-fold desc="Observe Favorite buttons state">
+        viewModel.isFavoriteComic.observe(viewLifecycleOwner) { isFavoriteComic ->
+            showFavorite(isFavorite = isFavoriteComic)
+        }
+        // </editor-fold>
     }
 
     override fun setupListener() {
@@ -90,7 +96,9 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
             binding.previousComicImageView,
             binding.nextComicImageView,
             binding.lastComicImageView,
-            binding.randomComicImageView
+            binding.favoriteComicImageView,
+            binding.randomComicImageView,
+            binding.shareComicImageView
         )
     }
 
@@ -109,6 +117,10 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
                 )
             R.id.lastComicImageView -> viewModel.getLastComic()
             R.id.randomComicImageView -> viewModel.randomComic()
+            R.id.favoriteComicImageView -> viewModel.addFavoriteComic(
+                comic = viewModel.latestComic
+            )
+            R.id.shareComicImageView -> shareComic()
         }
     }
 
@@ -127,6 +139,22 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
         binding.comicTitleTextView.text = comic.title
         binding.comicNumberView.text = "# ${comic.number}"
         binding.comicDescTextView.text = comic.description
+    }
+
+    private fun showFavorite(isFavorite: Boolean) {
+        if (isFavorite)
+            binding.favoriteComicImageView.setImageResource(R.drawable.ic_favorite_fill_24dp)
+        else
+            binding.favoriteComicImageView.setImageResource(R.drawable.ic_favorite_24dp)
+    }
+
+    private fun shareComic() {
+        showMessage(
+            MessageMaster(
+                type = MessageTypeEnum.TOAST,
+                messageResourceId = io.shortcut.android.xkcd.comics.favorite.R.string.not_implemented_yet,
+            )
+        )
     }
 
     private fun navigateToDetailFragment(comic: ComicModel) {

@@ -3,6 +3,9 @@ package io.shortcut.android.xkcd.comics.finder.presenter.viewmodel
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import io.mockk.coEvery
 import io.mockk.mockk
+import io.shortcut.android.xkcd.comics.favorite.domain.usecase.AddFavoriteUseCase
+import io.shortcut.android.xkcd.comics.favorite.domain.usecase.DeleteFavoriteUseCase
+import io.shortcut.android.xkcd.comics.favorite.domain.usecase.FavoriteByNumberUseCase
 import io.shortcut.android.xkcd.comics.finder.domain.usecase.ComicByNumberUseCase
 import io.shortcut.android.xkcd.comics.finder.domain.usecase.LastComicUseCase
 import io.shortcut.android.xkcd.comics.finder.presenter.ComicFinderViewModel
@@ -33,6 +36,9 @@ class ComicFinderViewModelRandomTest {
     // Mock
     private val lastComicUseCase: LastComicUseCase = mockk()
     private val comicByNumberUseCase: ComicByNumberUseCase = mockk()
+    private val addFavoriteUseCase: AddFavoriteUseCase = mockk()
+    private val favoriteByNumberUseCase: FavoriteByNumberUseCase = mockk()
+    private val deleteFavoriteUseCase: DeleteFavoriteUseCase = mockk()
 
     // Class for test
     private lateinit var comicFinderViewModel: ComicFinderViewModel
@@ -48,7 +54,10 @@ class ComicFinderViewModelRandomTest {
         // Initial viewModel
         comicFinderViewModel = ComicFinderViewModel(
             lastComicUseCase = lastComicUseCase,
-            comicByNumberUseCase = comicByNumberUseCase
+            comicByNumberUseCase = comicByNumberUseCase,
+            addFavoriteUseCase = addFavoriteUseCase,
+            favoriteByNumberUseCase = favoriteByNumberUseCase,
+            deleteFavoriteUseCase = deleteFavoriteUseCase
         )
 
     }

@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19722222222222222" />
         <entry key="core/uikit/src/main/res/drawable/ic_arrow_back_24dp.xml" value="0.16296296296296298" />
         <entry key="core/uikit/src/main/res/drawable/ic_close_24dp.xml" value="0.22685185185185186" />
+        <entry key="core/uikit/src/main/res/drawable/ic_delete_24.xml" value="0.21296296296296297" />
         <entry key="core/uikit/src/main/res/drawable/ic_delete_24dp.xml" value="0.22685185185185186" />
         <entry key="core/uikit/src/main/res/drawable/ic_explorer_24dp.xml" value="0.22685185185185186" />
         <entry key="core/uikit/src/main/res/drawable/ic_explorer_32dp.xml" value="0.2528205128205128" />
@@ -24,13 +25,16 @@
         <entry key="core/uikit/src/main/res/drawable/ic_random_24dp.xml" value="0.16296296296296298" />
         <entry key="core/uikit/src/main/res/drawable/ic_random_32dp.xml" value="0.16296296296296298" />
         <entry key="core/uikit/src/main/res/drawable/ic_share_24dp.xml" value="0.16296296296296298" />
+        <entry key="core/uikit/src/main/res/drawable/ic_share_32dp.xml" value="0.21296296296296297" />
         <entry key="core/uikit/src/main/res/drawable/shape_rect_black_opacity_24dp.xml" value="0.16296296296296298" />
         <entry key="core/uikit/src/main/res/drawable/shape_rect_divider_8dp.xml" value="0.16296296296296298" />
         <entry key="core/uikit/src/main/res/drawable/shape_shadow_black_bottom.xml" value="0.16296296296296298" />
         <entry key="core/uikit/src/main/res/layout/component_toolbar.xml" value="0.240625" />
         <entry key="features/comicdetail/src/main/res/layout/fragment_detail.xml" value="0.33" />
-        <entry key="features/comics/src/main/res/layout/fragment_comic_finder.xml" value="0.240625" />
+        <entry key="features/comics/src/main/res/layout/fragment_comic_finder.xml" value="0.5" />
         <entry key="features/explorer/src/main/res/layout/fragment_explorer.xml" value="0.2" />
+        <entry key="features/favorite/src/main/res/layout/fragment_favorite.xml" value="0.240625" />
+        <entry key="features/favorite/src/main/res/layout/item_favorite.xml" value="0.240625" />
         <entry key="features/favourite/src/main/res/layout/fragment_favorite.xml" value="0.240625" />
         <entry key="features/main/src/main/res/layout/activity_main.xml" value="0.15648148148148147" />
         <entry key="features/main/src/main/res/layout/fragment_splash.xml" value="0.15648148148148147" />

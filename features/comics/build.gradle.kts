@@ -11,9 +11,11 @@ dependencies {
     implementation(project(":core:cachemanager"))
     implementation(project(":core:repository"))
     implementation(project(":core:navigation"))
+    implementation(project(":core:room"))
 
     // Features
     implementation(project(":features:comicdetail"))
+    implementation(project(":features:favorite"))
 
     testDG()
     baseModuleDG()

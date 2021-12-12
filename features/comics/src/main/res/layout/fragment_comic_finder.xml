@@ -159,6 +159,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_last_page_32dp" />
 
+        <View
+            android:id="@+id/divider"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/windowsBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/favoriteComicImageView"
+            app:layout_constraintStart_toEndOf="@+id/lastComicImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <!--Comic Controller start-->
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/favoriteComicImageView"

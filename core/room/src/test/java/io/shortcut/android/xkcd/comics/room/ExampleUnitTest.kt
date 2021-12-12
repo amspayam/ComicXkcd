@@ -1,8 +1,7 @@
-package io.shortcut.android.xkcd.comics.favorite
-
-import org.junit.Test
+package io.shortcut.android.xkcd.comics.room
 
 import org.junit.Assert.*
+import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).
