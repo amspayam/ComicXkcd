@@ -33,11 +33,13 @@ data class ExplanationEntity(
     }
 }
 
+@Keep
 data class ParseEntity(
     val title: String?,
     val wikitext: ComicExplanationEntity?
 )
 
+@Keep
 data class ComicExplanationEntity(
     @SerializedName("*")
     val explanation: String?
