@@ -2,7 +2,7 @@ package io.shortcut.android.xkcd.comicdetail.testdataprovider
 
 import io.shortcut.android.xkcd.comicdetail.data.entity.ExplanationEntity
 import io.shortcut.android.xkcd.comicdetail.domain.model.ExplanationResponseModel
-import io.shortcut.test.dataprovider.DataProviderUtils
+import io.shortcut.android.xkcd.comics.test.dataprovider.DataProviderUtils
 
 
 class DetailDataProviderFromJson {

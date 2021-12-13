@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import io.shortcut.android.xkcd.comics.base.view.onViewData
 import io.shortcut.android.xkcd.comics.base.view.onViewError
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.favorite.R
 import io.shortcut.android.xkcd.comics.favorite.databinding.FragmentFavoriteBinding
 import io.shortcut.android.xkcd.comics.favorite.presenter.adapter.FavoriteAdapter
 import io.shortcut.android.xkcd.comics.favorite.presenter.adapter.FavoriteDecoration
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.uikit.base.BaseFragment
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.MessageMaster
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.MessageTypeEnum

@@ -3,11 +3,11 @@ package io.shortcut.android.xkcd.comics.favorite.presenter
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PagingData
 import io.shortcut.android.xkcd.comics.base.view.ViewState
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.favorite.R
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.DeleteFavoriteUseCase
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.FavoriteListUseCase
 import io.shortcut.android.xkcd.comics.repository.executeUseCase
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.BaseViewModel
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.MessageMaster
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.MessageTypeEnum

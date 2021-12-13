@@ -3,6 +3,7 @@ package io.shortcut.android.xkcd.comics.finder.presenter
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.MutableLiveData
 import io.shortcut.android.xkcd.comics.base.view.ViewState
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.AddFavoriteUseCase
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.DeleteFavoriteUseCase
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.FavoriteByNumberUseCase
@@ -10,7 +11,6 @@ import io.shortcut.android.xkcd.comics.finder.domain.model.ComicModel
 import io.shortcut.android.xkcd.comics.finder.domain.usecase.ComicByNumberUseCase
 import io.shortcut.android.xkcd.comics.finder.domain.usecase.LastComicUseCase
 import io.shortcut.android.xkcd.comics.repository.executeUseCase
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.BaseViewModel
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.MessageMaster
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.MessageTypeEnum
@@ -68,7 +68,7 @@ class ComicFinderViewModel(
                 )
 
                 // Favorite
-                getFavoriteByNumber(comicNumber = latestComic.number)
+                checkFavoriteByNumberState(comicNumber = latestComic.number)
 
             }, {
                 // Update view for show Error
@@ -103,7 +103,7 @@ class ComicFinderViewModel(
                     )
 
                     // Favorite
-                    getFavoriteByNumber(comicNumber = latestComic.number)
+                    checkFavoriteByNumberState(comicNumber = latestComic.number)
 
                 }, {
                     // Update view for show Error
@@ -147,7 +147,7 @@ class ComicFinderViewModel(
         getComicByNumber(randomComic(lastComicNumber = lastComicNumber))
     }
 
-    fun addFavoriteComic(comic: ComicModel) {
+    fun changeFavoriteComicState(comic: ComicModel) {
 
         // Remove all job
         removeAllJob()
@@ -196,7 +196,7 @@ class ComicFinderViewModel(
 
     }
 
-    private fun getFavoriteByNumber(comicNumber: Int) {
+    private fun checkFavoriteByNumberState(comicNumber: Int) {
         track {
             favoriteByNumberUseCase.executeAsync(comicNumber).executeUseCase({ favorite ->
                 isFavoriteComic.postValue(favorite != null)

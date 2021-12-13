@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import io.shortcut.android.xkcd.comics.uikit.base.viewmodel.BaseViewModel
 import kotlinx.coroutines.delay
 
-class SplashViewModel() : BaseViewModel() {
+class SplashViewModel : BaseViewModel() {
 
     val navigationToMainFragment = MutableLiveData(false)
 

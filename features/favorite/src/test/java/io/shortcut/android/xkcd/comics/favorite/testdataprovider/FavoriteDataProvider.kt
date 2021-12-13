@@ -1,7 +1,7 @@
 package io.shortcut.android.xkcd.comics.favorite.testdataprovider
 
 
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 
 class FavoriteDataProvider {
 

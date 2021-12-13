@@ -3,9 +3,9 @@ package io.shortcut.android.xkcd.comics.favorite
 import io.mockk.coEvery
 import io.mockk.mockk
 import io.mockk.verify
+import io.shortcut.android.xkcd.comics.database.dao.FavoriteDao
 import io.shortcut.android.xkcd.comics.favorite.data.local.FavoriteLocalDataSourceImpl
 import io.shortcut.android.xkcd.comics.favorite.testdataprovider.FavoriteDataProvider
-import io.shortcut.android.xkcd.comics.room.dao.FavoriteDao
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
 import org.junit.runner.RunWith

@@ -10,7 +10,7 @@ interface ExplanationApiService {
     @GET("api.php")
     fun getComicExplanation(
         @Query("action") action: String = "parse",
-        @Query("page") comicTitle: String,
+        @Query("page") page: String,
         @Query("prop") prop: String = "wikitext",
         @Query("sectiontitle") sectionTitle: String = "Explanation",
         @Query("format") format: String = "json",

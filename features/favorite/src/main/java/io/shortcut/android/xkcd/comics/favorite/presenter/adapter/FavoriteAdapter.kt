@@ -3,10 +3,10 @@ package io.shortcut.android.xkcd.comics.favorite.presenter.adapter
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.favorite.R
 import io.shortcut.android.xkcd.comics.favorite.databinding.ItemFavoriteBinding
 import io.shortcut.android.xkcd.comics.favorite.presenter.adapter.viewholder.FavoriteViewHolder
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.uikit.extension.inflate
 
 class FavoriteAdapter(

@@ -9,7 +9,6 @@ include ':core:test'
 include ':core:base'
 include ':core:uikit'
 include ':core:repository'
-include ':core:cachemanager'
 include ':core:navigation'
 
 /* Feature */
@@ -17,4 +16,4 @@ include ':features:main'
 include ':features:comics'
 include ':features:comicdetail'
 include ':features:favorite'
-include ':core:room'
+include ':core:database'

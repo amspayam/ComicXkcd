@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 open class BaseViewModel : ViewModel() {
 
     val message: SingleLiveEvent<MessageMaster> = SingleLiveEvent()
-    val jobs = HashMap<String, Job>()
+    private val jobs = HashMap<String, Job>()
 
     fun track(jobName: String? = null, block: suspend CoroutineScope.() -> Unit) {
         val job = viewModelScope.launch(context = Dispatchers.IO, block = block)

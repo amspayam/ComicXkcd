@@ -27,7 +27,7 @@ abstract class BaseFragment<VM : BaseViewModel> : Fragment(),
         setupObserveData()
     }
 
-    abstract fun setupViews()
+    open fun setupViews(){}
 
     open fun setupToolbar() {
     }

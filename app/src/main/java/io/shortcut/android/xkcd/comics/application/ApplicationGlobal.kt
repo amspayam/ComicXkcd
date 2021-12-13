@@ -2,13 +2,12 @@ package io.shortcut.android.xkcd.comics.application
 
 import androidx.multidex.MultiDexApplication
 import io.shortcut.android.xkcd.comicdetail.di.DetailInjector
-import io.shortcut.android.xkcd.comics.cachemanager.di.CachemanagerInjector
+import io.shortcut.android.xkcd.comics.database.di.DatabaseInjector
 import io.shortcut.android.xkcd.comics.favorite.di.FavoriteInjector
 import io.shortcut.android.xkcd.comics.finder.di.ComicsInjector
 import io.shortcut.android.xkcd.comics.main.mainactivity.di.MainActivityInjector
 import io.shortcut.android.xkcd.comics.main.splash.di.SplashInjector
 import io.shortcut.android.xkcd.comics.repository.di.RepositoryInjector
-import io.shortcut.android.xkcd.comics.room.di.DatabaseInjector
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -27,7 +26,6 @@ class ApplicationGlobal : MultiDexApplication() {
     private fun initialKoin() {
         startKoin {
             androidLogger(Level.ERROR).androidContext(this@ApplicationGlobal)
-                .modules(CachemanagerInjector.provideDependencies())
                 .modules(RepositoryInjector.provideDependencies())
                 .modules(DatabaseInjector.provideDependencies())
                 /* Features */

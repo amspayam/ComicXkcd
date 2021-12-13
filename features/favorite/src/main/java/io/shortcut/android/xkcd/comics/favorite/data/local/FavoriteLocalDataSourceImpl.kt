@@ -3,8 +3,8 @@ package io.shortcut.android.xkcd.comics.favorite.data.local
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import io.shortcut.android.xkcd.comics.room.dao.FavoriteDao
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
+import io.shortcut.android.xkcd.comics.database.dao.FavoriteDao
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 import kotlinx.coroutines.flow.Flow
 
 
@@ -24,12 +24,16 @@ class FavoriteLocalDataSourceImpl(
         return favoriteDao.getByNumber(comicNumber = number)
     }
 
-    override suspend fun getByPagination(): Flow<PagingData<FavoriteEntity>> {
+    override suspend fun getByPagination(
+        prefetchDistance: Int,
+        pageSize: Int,
+        enablePlaceholders: Boolean
+    ): Flow<PagingData<FavoriteEntity>> {
         val pager = Pager(
             config = PagingConfig(
-                prefetchDistance = 10,
-                pageSize = 20,
-                enablePlaceholders = true
+                prefetchDistance = prefetchDistance,
+                pageSize = pageSize,
+                enablePlaceholders = enablePlaceholders
             )
         ) {
             favoriteDao.getFavorites()

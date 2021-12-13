@@ -14,7 +14,8 @@ class ExplanationRemoteDataSourceImpl(
         comicTitle: String
     ): ResultModel<ExplanationEntity> {
 
-        val comic = "$comicNumber:_${
+        // creating page query for retrieving explanation
+        val comicQuery = "$comicNumber:_${
             comicTitle.replace(
                 " ",
                 "_"
@@ -22,7 +23,7 @@ class ExplanationRemoteDataSourceImpl(
         }"
 
         return apiService.getComicExplanation(
-            comicTitle = comic
+            page = comicQuery
         ).awaitResult { it }
     }
 

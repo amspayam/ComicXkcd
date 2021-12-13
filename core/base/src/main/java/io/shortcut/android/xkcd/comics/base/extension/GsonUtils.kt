@@ -36,7 +36,7 @@ object GsonUtils {
 
     //convert gson String to List<T>. Crash when invalid structure found
     inline fun <reified T> String.toListByGson(): List<T> = if (isNotEmpty()) {
-        Gson().fromJson<List<T>>(
+        Gson().fromJson(
             this,
             TypeToken.getParameterized(ArrayList::class.java, T::class.java).type
         )

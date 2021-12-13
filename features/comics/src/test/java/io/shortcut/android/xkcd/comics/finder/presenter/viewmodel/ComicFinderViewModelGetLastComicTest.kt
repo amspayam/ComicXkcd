@@ -15,7 +15,7 @@ import io.shortcut.android.xkcd.comics.finder.presenter.ComicFinderViewModel
 import io.shortcut.android.xkcd.comics.finder.testdataprovider.ComicFinderDataProviderFromJson
 import io.shortcut.android.xkcd.comics.repository.ResultModel
 import io.shortcut.android.xkcd.comics.repository.network.entity.RestErrorResponse
-import io.shortcut.test.rule.MainCoroutineRule
+import io.shortcut.android.xkcd.comics.test.rule.MainCoroutineRule
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Rule

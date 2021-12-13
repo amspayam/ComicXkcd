@@ -3,8 +3,8 @@ package io.shortcut.android.xkcd.comics.favorite.presenter.adapter.viewholder
 import android.annotation.SuppressLint
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.favorite.databinding.ItemFavoriteBinding
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
 
 class FavoriteViewHolder(
     val binding: ItemFavoriteBinding,

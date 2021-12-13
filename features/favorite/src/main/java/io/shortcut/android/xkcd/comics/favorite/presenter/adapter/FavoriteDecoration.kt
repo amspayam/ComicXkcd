@@ -24,8 +24,9 @@ class FavoriteDecoration(context: Context) : ItemDecoration() {
 
         outRect.right = padding8dp
         outRect.left = padding8dp
-        outRect.top = if (position == 0) padding8dp else padding8dp
-        outRect.bottom = if (position == state.itemCount - 1) padding8dp else padding0dp
+        outRect.bottom = padding8dp
+
+        outRect.top = if (position == 0) padding8dp else padding0dp
     }
 
 }

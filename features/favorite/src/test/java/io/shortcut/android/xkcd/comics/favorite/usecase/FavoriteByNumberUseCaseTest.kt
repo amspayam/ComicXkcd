@@ -3,12 +3,12 @@ package io.shortcut.android.xkcd.comics.favorite.usecase
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
+import io.shortcut.android.xkcd.comics.database.entity.FavoriteEntity
 import io.shortcut.android.xkcd.comics.favorite.data.FavoriteRepositoryImpl
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.FavoriteByNumberUseCase
 import io.shortcut.android.xkcd.comics.favorite.testdataprovider.FavoriteDataProvider
 import io.shortcut.android.xkcd.comics.repository.ResultModel
 import io.shortcut.android.xkcd.comics.repository.map
-import io.shortcut.android.xkcd.comics.room.entity.FavoriteEntity
 import junit.framework.Assert.assertEquals
 import kotlinx.coroutines.runBlocking
 import org.junit.Test

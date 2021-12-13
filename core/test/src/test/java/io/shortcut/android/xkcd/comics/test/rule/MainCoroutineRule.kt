@@ -1,4 +1,4 @@
-package io.shortcut.test.rule
+package io.shortcut.android.xkcd.comics.test.rule
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

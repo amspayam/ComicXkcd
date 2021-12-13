@@ -8,10 +8,9 @@ dependencies {
     testImplementation(project(":core:test", "testArtifacts"))
     implementation(project(":core:base"))
     implementation(project(":core:uikit"))
-    implementation(project(":core:cachemanager"))
     implementation(project(":core:repository"))
     implementation(project(":core:navigation"))
-    implementation(project(":core:room"))
+    implementation(project(":core:database"))
 
     // Features
     implementation(project(":features:comicdetail"))

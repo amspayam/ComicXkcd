@@ -11,7 +11,7 @@ import io.shortcut.android.xkcd.comics.finder.domain.usecase.LastComicUseCase
 import io.shortcut.android.xkcd.comics.finder.presenter.ComicFinderViewModel
 import io.shortcut.android.xkcd.comics.finder.testdataprovider.ComicFinderDataProviderFromJson
 import io.shortcut.android.xkcd.comics.repository.ResultModel
-import io.shortcut.test.rule.MainCoroutineRule
+import io.shortcut.android.xkcd.comics.test.rule.MainCoroutineRule
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Assert
 import org.junit.Before

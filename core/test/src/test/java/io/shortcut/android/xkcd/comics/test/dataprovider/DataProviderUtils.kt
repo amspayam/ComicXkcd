@@ -1,4 +1,4 @@
-package io.shortcut.test.dataprovider
+package io.shortcut.android.xkcd.comics.test.dataprovider
 
 import com.google.gson.Gson
 

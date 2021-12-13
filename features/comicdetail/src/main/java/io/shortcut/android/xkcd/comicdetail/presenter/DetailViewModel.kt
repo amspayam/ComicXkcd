@@ -40,16 +40,12 @@ class DetailViewModel(
 
         // Update view for Loading view
         detailStateViewLiveData.value = ViewState.ViewLoading
-
-        // Create initial model to show to user while explanation loading
-        val initialData = ExplanationResponseModel(
-            title = "$comicNumber: $comicTitle",
-            explanation = "Fetching Data...",
-            imageUrl = comicImageUrl,
-            descripton = comicDescription
+        showDetail(
+            comicNumber = comicNumber,
+            comicTitle = comicTitle,
+            comicImageUrl = comicImageUrl,
+            comicDescription = comicDescription
         )
-        // Update view for the first time
-        detailStateViewLiveData.postValue(ViewState.ViewData(initialData))
 
         track {
             explanationUseCase.executeAsync(
@@ -73,6 +69,24 @@ class DetailViewModel(
         }
 
 
+    }
+
+    @VisibleForTesting
+    fun showDetail(
+        comicNumber: Int,
+        comicTitle: String,
+        comicImageUrl: String,
+        comicDescription: String
+    ) {
+        // Create initial model to show to user while explanation loading
+        val initialData = ExplanationResponseModel(
+            title = "$comicNumber: $comicTitle",
+            explanation = "Fetching Data...",
+            imageUrl = comicImageUrl,
+            descripton = comicDescription
+        )
+        // Update view for the first time
+        detailStateViewLiveData.postValue(ViewState.ViewData(initialData))
     }
 
 

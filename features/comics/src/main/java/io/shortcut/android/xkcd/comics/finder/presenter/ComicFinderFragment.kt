@@ -39,10 +39,9 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
     }
 
     override fun setupObserveData() {
-        // <editor-fold desc="Observe Last Comic">
+        // Observe Last Comic
         viewModel.comicStateViewLiveData.observe(viewLifecycleOwner) { result ->
-            result
-                .onViewLoading { binding.swipeRefresh.isRefreshing = true }
+            result.onViewLoading { binding.swipeRefresh.isRefreshing = true }
                 .onViewData { comic ->
                     showData(comic)
                     binding.swipeRefresh.isRefreshing = false
@@ -56,33 +55,33 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
                     binding.swipeRefresh.isRefreshing = false
                 }
         }
-        // </editor-fold>
+        //
 
-        // <editor-fold desc="Observe ComicController Buttons States">
+        // Observe ComicController Buttons States
         viewModel.comicControllerStateViewLiveData.observe(viewLifecycleOwner) { isEnabled ->
             comicControllerViewEnabled(isEnabled)
         }
-        // </editor-fold>
+        //
 
-        // <editor-fold desc="Observe Next and Last Button State">
+        // Observe Next and Last Button State
         viewModel.nextStateViewLiveData.observe(viewLifecycleOwner) { isEnabled ->
             binding.nextComicImageView.isEnabled = isEnabled
             binding.lastComicImageView.isEnabled = isEnabled
         }
-        // </editor-fold>
+        //
 
-        // <editor-fold desc="Observe Previous and First Button State">
+        // Observe Previous and First Button State
         viewModel.previousStateViewLiveData.observe(viewLifecycleOwner) { isEnabled ->
             binding.previousComicImageView.isEnabled = isEnabled
             binding.firstComicImageView.isEnabled = isEnabled
         }
-        // </editor-fold>
+        //
 
-        // <editor-fold desc="Observe Favorite buttons state">
+        // Observe Favorite buttons state
         viewModel.isFavoriteComic.observe(viewLifecycleOwner) { isFavoriteComic ->
             showFavorite(isFavorite = isFavoriteComic)
         }
-        // </editor-fold>
+        //
     }
 
     override fun setupListener() {
@@ -117,7 +116,7 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
                 )
             R.id.lastComicImageView -> viewModel.getLastComic()
             R.id.randomComicImageView -> viewModel.randomComic()
-            R.id.favoriteComicImageView -> viewModel.addFavoriteComic(
+            R.id.favoriteComicImageView -> viewModel.changeFavoriteComicState(
                 comic = viewModel.latestComic
             )
             R.id.shareComicImageView -> shareComic()
@@ -132,6 +131,7 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
 
     @SuppressLint("SetTextI18n")
     private fun showData(comic: ComicModel) {
+        // Image
         Glide.with(requireContext())
             .load(comic.imageLink)
             .into(binding.comicImageView)
@@ -142,10 +142,12 @@ class ComicFinderFragment : BaseFragment<ComicFinderViewModel>() {
     }
 
     private fun showFavorite(isFavorite: Boolean) {
-        if (isFavorite)
-            binding.favoriteComicImageView.setImageResource(R.drawable.ic_favorite_fill_24dp)
-        else
-            binding.favoriteComicImageView.setImageResource(R.drawable.ic_favorite_24dp)
+        binding.favoriteComicImageView.setImageResource(
+            if (isFavorite)
+                R.drawable.ic_favorite_fill_24dp
+            else
+                R.drawable.ic_favorite_24dp
+        )
     }
 
     private fun shareComic() {

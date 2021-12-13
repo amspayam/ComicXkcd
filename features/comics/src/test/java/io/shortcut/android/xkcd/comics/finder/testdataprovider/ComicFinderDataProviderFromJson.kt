@@ -2,7 +2,7 @@ package io.shortcut.android.xkcd.comics.finder.testdataprovider
 
 import io.shortcut.android.xkcd.comics.finder.data.entity.ComicEntity
 import io.shortcut.android.xkcd.comics.finder.domain.model.ComicModel
-import io.shortcut.test.dataprovider.DataProviderUtils
+import io.shortcut.android.xkcd.comics.test.dataprovider.DataProviderUtils
 
 
 class ComicFinderDataProviderFromJson {

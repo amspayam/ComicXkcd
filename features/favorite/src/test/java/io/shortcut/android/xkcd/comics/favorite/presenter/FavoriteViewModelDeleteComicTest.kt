@@ -6,7 +6,7 @@ import io.mockk.coVerify
 import io.mockk.mockk
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.DeleteFavoriteUseCase
 import io.shortcut.android.xkcd.comics.favorite.domain.usecase.FavoriteListUseCase
-import io.shortcut.test.rule.MainCoroutineRule
+import io.shortcut.android.xkcd.comics.test.rule.MainCoroutineRule
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Rule

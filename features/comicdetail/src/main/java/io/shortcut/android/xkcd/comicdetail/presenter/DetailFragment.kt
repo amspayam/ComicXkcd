@@ -38,7 +38,7 @@ class DetailFragment : BaseFragment<DetailViewModel>() {
 
     @SuppressLint("SetTextI18n")
     override fun setupObserveData() {
-        // <editor-fold desc="Observe Explanation">
+        // Observe Explanation
         viewModel.detailStateViewLiveData.observe(viewLifecycleOwner) { response ->
             response
                 .onViewLoading { binding.swipeRefresh.isRefreshing = true }
@@ -55,7 +55,7 @@ class DetailFragment : BaseFragment<DetailViewModel>() {
                     binding.swipeRefresh.isRefreshing = false
                 }
         }
-        // </editor-fold>
+        //
     }
 
     override fun setupListener() {
@@ -65,10 +65,13 @@ class DetailFragment : BaseFragment<DetailViewModel>() {
     }
 
     private fun showData(explanation: ExplanationResponseModel) {
+
+        // Image
         Glide.with(requireContext())
             .load(explanation.imageUrl)
             .into(binding.comicImageView)
 
+        // Title, Description and Explanation
         binding.comicTitleTextView.text = explanation.title
         binding.comicDescriptionTexView.text = explanation.descripton
         binding.comicExplanationTexView.text = explanation.explanation

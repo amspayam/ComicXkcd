@@ -29,7 +29,7 @@ abstract class BaseActivity<VM : BaseViewModel> : AppCompatActivity(),
         setupObserveData()
     }
 
-    abstract fun setupViews()
+    open fun setupViews(){}
 
     open fun setupToolbar() {}
 
